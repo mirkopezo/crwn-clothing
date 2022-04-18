@@ -16,7 +16,6 @@ const defaultFormFields = {
 
 const SignUpForm = () => {
   const [formFields, setFormFields] = useState(defaultFormFields);
-
   const { displayName, email, password, confirmPassword } = formFields;
 
   const resetFormFields = () => {
@@ -83,7 +82,7 @@ const SignUpForm = () => {
         <FormInput
           label="Password"
           inputOptions={{
-            type: "text",
+            type: "password",
             required: true,
             onChange: handleChange,
             name: "password",
@@ -94,7 +93,7 @@ const SignUpForm = () => {
         <FormInput
           label="Confirm Password"
           inputOptions={{
-            type: "text",
+            type: "password",
             required: true,
             onChange: handleChange,
             name: "confirmPassword",
